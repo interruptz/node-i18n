@@ -1,3 +1,3 @@
 module.exports = {
-    'Hello': '안녕하세요'
+    'Hello, $name.': '$name님, 안녕하세요.'
 }
