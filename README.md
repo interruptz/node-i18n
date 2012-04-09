@@ -24,6 +24,7 @@ Assume that the hierarchy of directories is following below.
 and the source code of each file is as follows:
 
 locales/ko/index.js:
+
 ```javascript
 module.exports = {
     'Hello, $name.': '$name님, 안녕하세요!'
