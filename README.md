@@ -24,32 +24,38 @@ Assume that the hierarchy of directories is following below.
 and the source code of each file is as follows:
 
 locales/ko/index.js:
-
-    module.exports = {
-        'Hello, $name.': '$name님, 안녕하세요!'
-    }
+```javascript
+module.exports = {
+    'Hello, $name.': '$name님, 안녕하세요!'
+}
+```
 
 locales/ja/index.js:
 
-    module.exports = {
-        'Hello, $name.': 'こんにちは！$nameさん！'
-    }
-
+```javascript
+module.exports = {
+    'Hello, $name.': 'こんにちは！$nameさん！'
+}
+```
 
 
 app.js:
 
-    var i = require('node-i18n');
-    var obj = {
-        name: 'Smith'
-    };
-    i.setLocale('en');
-    console.log( i.string('Hello, $name.', obj) );
-    i.setLocale('ko');
-    console.log( i.string('Hello, $name.', obj) );
-    i.setLocale('ja');
-    console.log( i.string('Hello, $name.', obj) );
+```javascript
+var i = require('node-i18n');
+var obj = {
+    name: 'Smith'
+};
 
+i.setLocale('en');
+console.log( i.string('Hello, $name.', obj) );
+
+i.setLocale('ko');
+console.log( i.string('Hello, $name.', obj) );
+
+i.setLocale('ja');
+console.log( i.string('Hello, $name.', obj) );
+```
 
 And go to your terminal.
 
